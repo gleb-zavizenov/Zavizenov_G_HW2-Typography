@@ -1,0 +1,144 @@
+/* Setting styles for main elements */
+.body{
+  background-color: #EDEAE1;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+/* Setting styles for header */
+.header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-nav {
+  width:33%;
+}
+
+.logo {
+  width: 33%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image{
+  height:100%;
+}
+
+.right-nav{
+  width:33%;
+}
+
+.nav-list{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: #000000;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.nav-link:hover, .active{
+  color: #2ed573;
+}
+
+/* Setting styles for hero section */
+.main{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:50px;
+}
+
+.hero-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  height: 400px;
+}
+
+.hero-left{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hero-left-title{
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size:48px;
+  font-weight: bold;
+  margin-bottom:30px;
+}
+
+.hero-left-text{
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size:16px;
+  font-weight: regular;
+  margin-bottom:40px;
+  line-height: 20px;
+}
+
+.hero-left-btn{
+  width:150px;
+  height:40px;
+  border-radius: 30px;
+  background-color: #eccc68;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left-btn-link:hover .hero-left-btn{
+  background-color: #2ed573;
+}
+
+.hero-left-btn-link{
+  text-decoration: none;
+  color: #f1f2f6;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  width:150px;
+}
+
+.hero-right{
+  width:50%;
+}
+
+.hero-right-image-container{
+  height: 400px;
+  width: 600px;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  border-radius: 60px;
+  box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+}
+
+.hero-right-image{
+  width: 100%;
+}
