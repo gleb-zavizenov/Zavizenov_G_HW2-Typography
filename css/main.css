@@ -58,7 +58,7 @@
 .nav-link{
   text-decoration: none;
   color: #000000;
-  font-family: "Montserrat", "Roboto", sans-serif;
+  font-family:"Montserrat", "Roboto", sans-serif;
   font-size: 16px;
   font-weight:400;
 }
@@ -200,9 +200,9 @@
 }
 
 .events-title{
-  font-family: "Montserrat", "Roboto", sans-serif;
-  font-size: 34px;
-  font-weight: 600;
+  font-family: "Amatic SC","Montserrat", "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
   margin-bottom:110px;
 }
@@ -302,11 +302,11 @@
 }
 
 .sponsors-title{
-  font-family: "Montserrat", "Roboto", sans-serif;
-  font-size: 34px;
-  font-weight: 600;
+  font-family: "Amatic SC","Montserrat", "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
-  margin-bottom:90px;
+  margin-bottom:70px;
 }
 
 .sponsors-slider{
@@ -339,6 +339,7 @@
 
 .left-controller-round:hover{
   background-color:#ffd5d6;
+  box-shadow: 0 3px 13px rgba(255,213,214,0.8);
 }
 
 .right-controller{
@@ -363,6 +364,7 @@
 
 .right-controller-round:hover{
   background-color:#ffd5d6;
+  box-shadow: 0 3px 13px rgba(255,213,214,0.8);
 }
 
 .controller-icon{
@@ -377,26 +379,56 @@
   justify-content: space-evenly;
   align-items: center;
   width:1000px;
-  height:300px;
+  height:450px;
+}
+
+.active-sponsor{
+  width:550px;
+  overflow:hidden;
+  /* background-color: red; */
+  position: relative;
+  height:400px;
 }
 
 .sponsor-block{
+  width: 550px;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top:50px;
-  margin-bottom:50px;
+  /* margin-top:50px;
+  margin-bottom:50px; */
+  display:none;
+  position:absolute;
+  top:25px;
+}
+
+.active-slide{
+  display:block;
+  width: 550px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
 }
 
 .sponsor-image{
   width:200px;
   overflow:hidden;
-  margin-bottom:20px;
+  margin-bottom:10px;
 }
 
 .sponsor-image-file{
   width:100%;
+}
+
+.sponsors-name{
+  margin-top:20px;
+  font-size:24px;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight:600;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .sponsor-description{
@@ -409,7 +441,7 @@
 
 .sponsor-link{
   text-decoration: none;
-  margin-top:30px;
+  margin-top:35px;
 }
 
 .sponsor-link:hover .border-btn{
@@ -417,5 +449,188 @@
   background-color: #ffd5d6;
   color:#ffffff;
   box-shadow: 0 3px 13px rgba(255,213,214,0.8);
+  border-color: #ffd5d6;
+}
+
+/* About us section styles */
+.about-us-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:80px;
+}
+
+.about-us-title{
+  font-family: "Amatic SC","Montserrat", "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom:60px;
+}
+
+.about-us-image{
+  width:100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.about-us-image-link{
+  width:100%;
+}
+
+.about-us-text{
+  font-size:18px;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight:400px;
+  margin-top:25px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.about-us-text p{
+  margin-bottom: 30px;
+}
+
+/* What we do section styles */
+.what-we-do-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:120px;
+}
+
+.what-we-do-title{
+  font-family: "Amatic SC","Montserrat", "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom:60px;
+}
+
+.what-we-do-images{
+  display:flex;
+  flex-direction: row;
+  height:200px;
+  overflow:hidden;
+  margin-bottom:20px;
+}
+
+.what-we-do-images-link{
+  width:33%;
+}
+
+.what-we-do-text{
+  font-size:18px;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight:400px;
+  margin-top:25px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.what-we-do-text p{
+  margin-bottom: 30px;
+}
+
+/* Footers styles */
+.footer{
+  margin-top: 50px;
+  height: 250px;
+  width: 100vw;
+  background-color: #2d3436;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container{
+  width:1200px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:20%;
+}
+
+.footer-nav-list{
+  margin-top:10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-nav-item{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-nav-item-link{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight:400;
+}
+
+.footer-nav-item-link:hover{
+  transition: 0.5s;
+  color: #eccc68;
+}
+
+.footer-center{
+  width:150px;
+  height:150px;
+}
+
+.footer-logo{
+  width:100%;
+  height:100%;
+}
+
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-right-title{
+  font-family: "Amatic SC","Montserrat", "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color:#ffffff;
+  text-align: left;
+  margin-bottom:15px;
+}
+
+.footer-right-text{
+  font-size:15px;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight:300px;
+  line-height: 20px;
+  text-align: left;
+  color:#ffffff;
+}
+
+.footer-right-donate{
+  text-decoration: none;
+  margin-top:20px;
+}
+
+.footer-right-donate .border-btn{
+  width:150px;
+  height:35px;
+}
+
+.footer-right-donate:hover .border-btn{
+  transition: 0.5s;
+  background-color: #ffd5d6;
+  color:#ffffff;
+  box-shadow: 0 3px 13px rgba(255,213,214,0.4);
   border-color: #ffd5d6;
 }
